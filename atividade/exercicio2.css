@@ -1,0 +1,112 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.hero {
+  background-image: url('olimpico.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 5vmin;
+  position: relative;
+  color: rgb(44, 170, 192);
+  overflow: hidden;
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vmax;
+  padding: 0 3vw;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 2vmax;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3vmax;
+  padding: 0.4vmax 1vmax;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5vmax;
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  padding: 0 4vw;
+}
+
+.hero-text h2 {
+  font-size: 3vmax;
+  margin-bottom: 1vmax;
+  font-weight:400;
+}
+
+.hero-text h1 {
+  font-size: 4vmax;
+  margin-bottom: 1vmax;
+  font-weight: 600;
+}
+
+
+.btn {
+  background-color: white;
+  color: black;
+  padding: 1vmax 4vmax;
+  font-size: 1.8vmax;
+  text-decoration: none;
+  border-radius: 1vmax;
+  transition: background 0.3s;
+  display: inline-block;
+  min-width: 18vw;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
